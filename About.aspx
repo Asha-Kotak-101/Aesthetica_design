@@ -31,26 +31,44 @@
             margin-bottom: 15px;
         }
 
-        .newsletter {
-            padding: 60px 0;
-        }
+                .newsletter {
+    background-color: #f8f8f8;
+    padding: 50px 30px;
+    margin-top: 60px;
+    text-align: center;
+}
 
-        .newsletter input[type="email"] {
-            width: 100%;
-            padding: 10px;
-            margin-top: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
+.newsletter h3 {
+    font-weight: 600;
+}
 
-        .newsletter button {
-            margin-top: 10px;
-            padding: 10px 20px;
-            border: none;
-            background-color: #000;
-            color: white;
-            border-radius: 4px;
-        }
+.newsletter input[type="email"] {
+    padding: 10px;
+    width: 300px;
+    max-width: 90%;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.newsletter button {
+    padding: 10px 20px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: #333;
+}
+        .product-grid,
+        .article-grid {
+         display: grid;
+         grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+        gap: 30px;
+        justify-content: center;
+}
     </style>
 </asp:Content>
 
@@ -78,21 +96,21 @@
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="team-member">
-                        <img src="Assets-1/Images/img3.png" alt="Architect" />
+                        <img src="Assets-1/Images/image 7.png" alt="Architect" />
                         <h5 class="mt-2">Architect</h5>
                         <p>We believe in collaboration, creativity, and client satisfaction, making us the perfect choice for your next design endeavor.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="team-member">
-                        <img src="Assets-1/Images/img2.png" alt="Developer" />
+                        <img src="Assets-1/Images/image 8.png" alt="Developer" />
                         <h5 class="mt-2">Developer</h5>
                         <p>Innovative, passionate, and attention to detail are the cornerstones of our team’s success, allowing us to create powerful applications and deliver seamless designs.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="team-member">
-                        <img src="Assets-1/Images/img1.png" alt="Project Manager" />
+                        <img src="Assets-1/Images/image 9.png" alt="Project Manager" />
                         <h5 class="mt-2">Project Manager</h5>
                         <p>Describe the team member here. Write a brief description of their role and accomplishments, or share a short bio with a background summary.</p>
                     </div>
@@ -101,18 +119,13 @@
         </div>
     </section>
 
-    <!-- Newsletter Section -->
-    <section class="newsletter container">
-        <div class="row justify-content-center">
-            <div class="col-md-6 text-center">
-                <h4 class="fw-bold">Subscribe to Our Newsletter</h4>
-                <p class="text-muted">Stay updated with our latest blog posts and design tips.</p>
-                <form>
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter your email" />
-                    <button type="submit" class="btn btn-dark">Subscribe</button>
-                </form>
-            </div>
-        </div>
-    </section>
+       <!-- Newsletter -->
+    <section class="newsletter">
+    <h3>Subscribe to Our Newsletter</h3>
+    <p>Stay updated with our latest blog posts and design tips.</p>
+    <form>
+        <input type="email" placeholder="Enter your email" required />
+        <button type="submit">Subscribe</button>
+    </form>
+</section>
 </asp:Content>

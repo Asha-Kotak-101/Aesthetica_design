@@ -43,25 +43,36 @@
         }
 
         .newsletter {
-            padding: 60px 0;
-        }
+    background-color: #f8f8f8;
+    padding: 50px 30px;
+    margin-top: 60px;
+    text-align: center;
+}
 
-        .newsletter input[type="email"] {
-            width: 100%;
-            padding: 10px;
-            margin-top: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
+.newsletter h3 {
+    font-weight: 600;
+}
 
-        .newsletter button {
-            margin-top: 10px;
-            padding: 10px 20px;
-            border: none;
-            background-color: #000;
-            color: white;
-            border-radius: 4px;
-        }
+.newsletter input[type="email"] {
+    padding: 10px;
+    width: 300px;
+    max-width: 90%;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.newsletter button {
+    padding: 10px 20px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: #333;
+}
         .product-grid,
         .article-grid {
          display: grid;
@@ -137,17 +148,12 @@
     </div>
 
     <!-- Newsletter -->
-    <section class="newsletter container">
-        <div class="row justify-content-center">
-            <div class="col-md-6 text-center">
-                <h4 class="fw-bold">Subscribe to Our Newsletter</h4>
-                <p class="text-muted">Stay updated with our latest blog posts and design tips.</p>
-                <form>
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter your email" />
-                    <button type="submit" class="btn btn-dark">Subscribe</button>
-                </form>
-            </div>
-        </div>
-    </section>
+     <section class="newsletter">
+     <h3>Subscribe to Our Newsletter</h3>
+     <p>Stay updated with our latest blog posts and design tips.</p>
+     <form>
+         <input type="email" placeholder="Enter your email" required />
+         <button type="submit">Subscribe</button>
+     </form>
+ </section>
 </asp:Content>
