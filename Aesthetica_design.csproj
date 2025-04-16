@@ -82,6 +82,11 @@
     <Content Include="Register.aspx" />
     <Content Include="SignIn.aspx" />
     <Content Include="User\BlogUser.aspx" />
+    <Content Include="User\BudgetUser.aspx" />
+    <Content Include="User\HomeUser.aspx" />
+    <Content Include="User\JoinTeam.aspx" />
+    <Content Include="User\RoomMeasurement.aspx" />
+    <Content Include="User\StyleUser.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -163,8 +168,44 @@
     <Compile Include="User\BlogUser.aspx.designer.cs">
       <DependentUpon>BlogUser.aspx</DependentUpon>
     </Compile>
+    <Compile Include="User\BudgetUser.aspx.cs">
+      <DependentUpon>BudgetUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\BudgetUser.aspx.designer.cs">
+      <DependentUpon>BudgetUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\HomeUser.aspx.cs">
+      <DependentUpon>HomeUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\HomeUser.aspx.designer.cs">
+      <DependentUpon>HomeUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\JoinTeam.aspx.cs">
+      <DependentUpon>JoinTeam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\JoinTeam.aspx.designer.cs">
+      <DependentUpon>JoinTeam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\RoomMeasurement.aspx.cs">
+      <DependentUpon>RoomMeasurement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\RoomMeasurement.aspx.designer.cs">
+      <DependentUpon>RoomMeasurement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\StyleUser.aspx.cs">
+      <DependentUpon>StyleUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\StyleUser.aspx.designer.cs">
+      <DependentUpon>StyleUser.aspx</DependentUpon>
+    </Compile>
     <Compile Include="User\UserMaster.Master.cs">
       <DependentUpon>UserMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="User\UserMaster.Master.designer.cs">
       <DependentUpon>UserMaster.Master</DependentUpon>
