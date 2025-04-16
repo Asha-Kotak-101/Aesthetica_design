@@ -59,7 +59,7 @@
     <section class="about-section container">
         <div class="row align-items-center">
             <div class="col-md-6 mb-4">
-                <img src="images/about.jpg" alt="About Us" class="img-fluid rounded shadow" />
+                <img src="Assets-1/Images/about.png" alt="About Us" class="img-fluid rounded shadow" />
             </div>
             <div class="col-md-6">
                 <h2>About Us</h2>
@@ -78,21 +78,21 @@
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="team-member">
-                        <img src="images/team1.jpg" alt="Architect" />
+                        <img src="Assets-1/Images/img3.png" alt="Architect" />
                         <h5 class="mt-2">Architect</h5>
                         <p>We believe in collaboration, creativity, and client satisfaction, making us the perfect choice for your next design endeavor.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="team-member">
-                        <img src="images/team2.jpg" alt="Developer" />
+                        <img src="Assets-1/Images/img2.png" alt="Developer" />
                         <h5 class="mt-2">Developer</h5>
                         <p>Innovative, passionate, and attention to detail are the cornerstones of our team’s success, allowing us to create powerful applications and deliver seamless designs.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="team-member">
-                        <img src="images/team3.jpg" alt="Project Manager" />
+                        <img src="Assets-1/Images/img1.png" alt="Project Manager" />
                         <h5 class="mt-2">Project Manager</h5>
                         <p>Describe the team member here. Write a brief description of their role and accomplishments, or share a short bio with a background summary.</p>
                     </div>
