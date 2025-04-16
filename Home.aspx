@@ -1,7 +1,47 @@
 ﻿<%@ Page Title="Home" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="Aesthetica_design.Home" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
-    Home
+
+    <style>
+ .newsletter {
+    background-color: #f8f8f8;
+    padding: 50px 30px;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.newsletter h3 {
+    font-weight: 600;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    width: 300px;
+    max-width: 90%;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.newsletter button {
+    padding: 10px 20px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: #333;
+}
+        .product-grid,
+        .article-grid {
+         display: grid;
+         grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+        gap: 30px;
+        justify-content: center;
+}
+    </style>
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="head" runat="server">
@@ -71,16 +111,13 @@
         </div>
     </section>
 
-    <!-- Newsletter -->
-    <section class="bg-light p-4 rounded mt-5">
-        <h3 class="text-center mb-3">Subscribe to Our Newsletter</h3>
-        <p class="text-center mb-3">Stay updated with design tips and our latest blog posts.</p>
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <asp:TextBox ID="txtEmail" runat="server" CssClass="form-control mb-2" placeholder="Enter your email" />
-                <asp:Button ID="btnSubscribe" runat="server" CssClass="btn btn-dark w-100" Text="Subscribe" OnClick="btnSubscribe_Click" />
-            </div>
-        </div>
-    </section>
+       <!-- Newsletter -->
+<section class="newsletter">
+<h3>Subscribe to Our Newsletter</h3>
+<p>Stay updated with our latest blog posts and design tips.</p>
+<form>
+    <input type="email" placeholder="Enter your email" required />
+    <button type="submit">Subscribe</button>
+</form>
 
 </asp:Content>

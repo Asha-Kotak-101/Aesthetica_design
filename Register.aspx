@@ -97,7 +97,7 @@
         <div class="form-group">
             <label for="txtPassword">Password</label>
             <asp:TextBox ID="txtPassword" runat="server" CssClass="form-control" TextMode="Password" placeholder="Enter a password"></asp:TextBox>
-            <div class="form-note">Password must be at least 8 characters</div>
+            
         </div>
 
         <div class="form-group">

@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Aesthetica_design
+namespace Aesthetica_design.Admin
 {
 
 
-    public partial class Home
+    public partial class BudgetAdmin
     {
     }
 }

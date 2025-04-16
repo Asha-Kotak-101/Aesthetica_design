@@ -176,11 +176,11 @@
     </div>
     <div class="navbar-right">
         <ul class="nav-links">
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Styles</a></li>
-            <li><a href="#">Budget</a></li>
-            <li><a href="#">Measure</a></li>
-            <li><a href="#">Careers</a></li>
+            <li><a href="BlogUser.aspx">Blog</a></li>
+            <li><a href="StyleUser.aspx">Styles</a></li>
+            <li><a href="BudgetUser.aspx">Budget</a></li>
+            <li><a href="RoomMeasurement.aspx">Measure</a></li>
+            <li><a href="JoinTeam.aspx">Careers</a></li>
         </ul>
          <div class="navbar-search">
             <i class="fas fa-search"></i>
