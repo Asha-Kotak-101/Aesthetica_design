@@ -130,7 +130,8 @@
         </header>
 
         <!-- MAIN CONTENT -->
-        <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+<asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+
 
         <!-- FOOTER -->
         <footer class="user-footer">
