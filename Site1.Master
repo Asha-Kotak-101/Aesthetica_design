@@ -24,7 +24,17 @@
             padding: 20px 0;
             text-align: center;
         }
-
+        .gap-3 {
+            gap: 1rem !important;
+            padding-top: 10px;
+        }
+        .d-flex {
+    display: flex !important
+;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
 
         .footer {
     background-color: #000;
@@ -114,7 +124,9 @@
     <div class="container text-light">
         <div class="row mb-4">
             <div class="col-md-3 mb-3">
-                <h5 class="mb-3">Aesthetica</h5>
+               <a class="navbar-brand fw-bold" href="#">
+    <img src="Assets-1/Images/Aesthetica 1.png" alt="Aesthetica" style="height: 60px;" class="me-2" /> 
+</a>
                 <div class="d-flex gap-3">
                     <a href="#"><i class="fab fa-x-twitter text-white"></i></a>
                     <a href="#"><i class="fab fa-instagram text-white"></i></a>
@@ -125,12 +137,12 @@
             <div class="col-md-3 mb-3">
                 <h6>Quick Links</h6>
                 <ul class="list-unstyled">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">Career</a></li>
-                    <li><a href="#">Contact us</a></li>
+                    <li><a href="Home.aspx">Home</a></li>
+                    <li><a href="About.aspx">About Us</a></li>
+                    <li><a href="Blog.aspx">Blog</a></li>
+                    <li><a href="Gallery.aspx">Gallery</a></li>
+                    <li><a href="Gallery.aspx">Gallery</a></li>
+                    <li><a href="Contact.aspx">Contact us</a></li>
                 </ul>
             </div>
             <div class="col-md-3 mb-3">
