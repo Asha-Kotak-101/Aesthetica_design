@@ -1,0 +1,177 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="UserMaster.master.cs" Inherits="Aesthetica_design.User.UserMaster" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="UTF-8">
+    <title>Aesthetica - User</title>
+    <style>
+        /* Global Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", sans-serif;
+        }
+
+        /* HEADER */
+        .user-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            background-color: #f7f7f7;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .user-header .logo {
+            font-weight: bold;
+            font-size: 20px;
+            border: 1px solid #000;
+            padding: 5px 10px;
+        }
+
+        .user-header .nav-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .user-header .header-right {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .user-header input[type="text"] {
+            padding: 6px 12px;
+            border-radius: 20px;
+            border: 1px solid #ccc;
+            outline: none;
+            width: 200px;
+        }
+
+        /* FOOTER */
+        .user-footer {
+            background-color: #000;
+            color: #fff;
+            padding: 40px;
+        }
+
+        .footer-top {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .footer-columns {
+            display: flex;
+            gap: 60px;
+        }
+
+        .footer-column h4 {
+            margin-bottom: 10px;
+        }
+
+        .footer-column a {
+            display: block;
+            margin: 4px 0;
+            text-decoration: none;
+            color: #ccc;
+            font-size: 14px;
+        }
+
+        .footer-column a:hover {
+            color: #fff;
+        }
+
+        .footer-column p {
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        .footer-bottom {
+            margin-top: 30px;
+            border-top: 1px solid #555;
+            padding-top: 15px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+        }
+
+        .footer-bottom a {
+            color: #ccc;
+            margin: 0 5px;
+            text-decoration: none;
+        }
+
+        .footer-bottom a:hover {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <!-- HEADER -->
+        <header class="user-header">
+            <div class="logo">Aesthetica</div>
+            <nav class="nav-links">
+                <a href="#">Blog</a>
+                <a href="#">Styles</a>
+                <a href="#">Budget</a>
+                <a href="#">Measure</a>
+                <a href="#">Careers</a>
+            </nav>
+            <div class="header-right">
+                <input type="text" placeholder="🔍 Search designs, styles, tip..." />
+                <span class="icon">🔔</span>
+                <span class="icon">👤</span>
+            </div>
+        </header>
+
+        <!-- MAIN CONTENT -->
+        <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+
+        <!-- FOOTER -->
+        <footer class="user-footer">
+            <div class="footer-top">
+                <div class="logo">Aesthetica</div>
+                <div class="footer-columns">
+                    <div class="footer-column">
+                        <h4>Quick Links</h4>
+                        <a href="#">Home</a>
+                        <a href="#">About Us</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Gallery</a>
+                        <a href="#">Career</a>
+                        <a href="#">Contact us</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <a href="#">Stay Updated with Our Blog</a>
+                        <a href="#">Design Your Space</a>
+                        <a href="#">Plan Your Budget</a>
+                        <a href="#">Get an Instant Quote</a>
+                        <a href="#">Measure Your Room</a>
+                        <a href="#">Chat with Us Live</a>
+                        <a href="#">Join Our Team</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Get in touch</h4>
+                        <p>📍 123 Main Street<br>Your City, State Country.</p>
+                        <p>📞 (123) 456-7890</p>
+                        <p>✉️ aesthetica@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Interior Design Blog. All Rights Reserved.</p>
+                <div>
+                    <a href="#">Privacy Policy</a> |
+                    <a href="#">Terms of Use</a>
+                </div>
+            </div>
+        </footer>
+    </form>
+</body>
+</html>
