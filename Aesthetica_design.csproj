@@ -75,6 +75,7 @@
     <Content Include="Assets-1\Images\logo.png" />
     <Content Include="Blog.aspx" />
     <Content Include="Career.aspx" />
+    <Content Include="Contact.aspx" />
     <Content Include="Gallery.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="Web.config" />
@@ -100,6 +101,13 @@
     </Compile>
     <Compile Include="Career.aspx.designer.cs">
       <DependentUpon>Career.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
     <Compile Include="Gallery.aspx.cs">
       <DependentUpon>Gallery.aspx</DependentUpon>
